@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+
+@keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .created-by {
+    display: flex;                   
+    flex-direction: column;         
+    align-items: center;           
+    justify-content: center;        
+    height: 100vh;                  
+    background-image: url('../assets/bg\ image.webp'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    animation: backgroundAnimation 15s linear infinite; 
+    filter: brightness(0.8) contrast(1.2);
+  }
+
+  .created-by-1{
+    border: 5px solid rgb(83, 56, 29);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    background: rgba(41, 41, 41, 0);
+  }
+  
+  .created-by-title {
+    font-size: 40px;              
+    color: #FFFFFF;                 
+    margin: 20px 0;   
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    text-align: center;           
+  }
+  
+  .created-by-logo {
+    width: 400px;                  
+    height: 370px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;              
+  }
+  
+
+  @media (max-width: 768px) {
+    .created-by {
+      min-height: 100vh;          /* Ensure the div covers the full height of the viewport */
+      width: 100vw;               /* Ensure the div covers the full width of the viewport */
+      background-size: cover;     /* Background image should cover the entire div */
+      background-position: center; /* Center the background image */
+      filter: brightness(0.8) contrast(1.2); /* Maintain brightness and contrast */
+    }
+  
+    .created-by-title {
+      font-size: 36px;            /* Reduce font size for smaller screens */
+    }
+    
+    .created-by-logo {
+      width: 350px;               /* Adjust logo width */
+      height: 350px;              /* Adjust logo height */
+    }
+    
+    .created-by {
+      height: 80vh;               /* Reduce height of the container */
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .created-by-title {
+      font-size: 30px;              /* Further reduce font size */
+    }
+    
+    .created-by-logo {
+      width: 300px;                 /* Further adjust logo width */
+      height: 300px;                /* Further adjust logo height */
+    }
+    
+    .created-by {
+      height: 70vh;                 /* Adjust height to fit smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .created-by-title {
+      font-size: 26px;              /* Decrease font size for very small screens */
+    }
+    
+    .created-by-logo {
+      width: 250px;                 /* Adjust logo width */
+      height: 250px;                /* Adjust logo height */
+    }
+    
+    .created-by {
+      height: 60vh;                 /* Further adjust height */
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .created-by-title {
+      font-size: 22px;              /* Smallest font size for the smallest screens */
+    }
+  
+    .created-by-logo {
+      width: 220px;                 /* Minimum logo width */
+      height: 220px;                /* Minimum logo height */
+    }
+    
+    .created-by {
+      height: 55vh;                 /* Maintain a comfortable height */
+    }
+  }
+  
