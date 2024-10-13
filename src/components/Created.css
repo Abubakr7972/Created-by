@@ -44,9 +44,8 @@
   
   .created-by-logo {
     width: 400px;                  
-    height: 370px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;              
+    height: 400px;
+    border-radius: 100px;                  
   }
   
 
